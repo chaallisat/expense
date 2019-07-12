@@ -11,36 +11,41 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <script src="assets/css/style.css"></script>
 
+    <!--Firebase Reference-->
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
+      <!-- Moment.js Reference -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
 
 </head>
 
 <body>
-    <div class="container">
-
-        <!--This is a nav bar for the site. Just in case we decide to expand on the concept.-->
-            <header>
-                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <a class="navbar-brand" href="index.html">Expense Spreadsheet</a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
-                          
-                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                              <ul class="navbar-nav mr-auto">
-                                <li class="nav-item active">
-                                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact Us</a>
-                                  </li>
-
-                              </ul>
-                            </div>
-                   
-                          </nav>
-            </header>
-            <br>
-
+  
+  <!--This is a nav bar for the site. Just in case we decide to expand on the concept.-->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Expense Spreadsheet</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          
+        </ul>
+      </div>
+      
+    </nav>
+  </header>
+  <br>
+  
+  <div class="container">
         <!--This is the search box-->
         <div class="card mb-4">
                 <div class="card-header">Submit an Expense</div>
@@ -87,7 +92,6 @@
                 </div>
               </div>
             
-        <div id="bacon"></div>  
 
 
     </div>
