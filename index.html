@@ -16,16 +16,43 @@
 
 <body>
     <div class="container">
-        
+
+        <!--This is a nav bar for the site. Just in case we decide to expand on the concept.-->
+            <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                            <a class="navbar-brand" href="index.html">Expense Spreadsheet</a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                          
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                  </li>
+
+                              </ul>
+                            </div>
+                   
+                          </nav>
+            </header>
+            <br>
+
         <!--This is the search box-->
+        <div class="card mb-4">
+                <div class="card-header">Submit an Expense</div>
+                <div class="card-body">
         <form>
             <div class="form-group">
                 <label for="category">Category</label>
                 <input class="form-control" id="category" type="text" required>
             </div>
             <div class="form-group">
-                <label for="expense-name">Name</label>
-                <input class="form-control" id="expense-name" type="text" required>
+                <label for="ex-name">Name</label>
+                <input class="form-control" id="ex-name" type="text" required>
             </div>
             <div class="form-group">
                 <label for="amount">Amount ($)</label>
@@ -37,12 +64,15 @@
             </div>
             <button class="btn btn-primary float-right" id="add-expense">Submit</button>
         </form>
+                </div>
+        </div>
+        <br>
 
         <!--This will display all the information we gather-->
         <div class="card mb-4">
-                <div class="card-header">Current Train Schedule</div>
+                <div class="card-header">All Expenses</div>
                 <div class="card-body">
-                  <table class="table table-sm table-hover" id='train-table'>
+                  <table class="table table-sm table-hover" id='expense-table'>
                     <thead>
                       <tr>
                         <th scope="col">Catergory</th>
@@ -56,13 +86,14 @@
                   </table>
                 </div>
               </div>
-            </div>
-          </div>
+            
+        <div id="bacon"></div>  
 
 
     </div>
 
     <!--All Javascript and jQuery scripts go here-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
 
 </body>
