@@ -12,7 +12,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  const database = firebase.database();
+  const database = firebase.database()
 
 $("#add-expense").on("click", function(event) {
     event.preventDefault();
