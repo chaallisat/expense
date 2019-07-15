@@ -60,13 +60,13 @@ database.ref().on("child_added", function(childSnapshot) {
     console.log(exAmount);
     console.log(exDate);
 
-    //let exDatePretty = moment.unix(exDate).format("MM/DD/YYYY");
+    let exDatePretty = moment.unix(exDate).format("MM/DD/YYYY");
 
     let newRow = $("<tr>").append(
         $("<td>").text(exCategory),
         $("<td>").text(exName),
         $("<td>").text(exAmount),
-        $("<td>").text(exDate),
+        $("<td>").text(exDatePretty),
     );
 
     $("#expense-table > tbody").append(newRow);
