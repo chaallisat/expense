@@ -12,7 +12,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  const database = firebase.database()
+  const database = firebase.database();
 
 $("#add-expense").on("click", function(event) {
     event.preventDefault();
@@ -20,7 +20,7 @@ $("#add-expense").on("click", function(event) {
 //Store all info gathered from UI
 const exCategory = $("#category").val().trim();
 const exName = $("#ex-name").val().trim();
-const exAmount = $("#amount").val().trim();
+const exAmount = parseInt($("#amount").val().trim());
 const exDate = moment($("#ex-date").val().trim(), "MM/DD/YYYY").format("X");
 
 const newExpense = {
