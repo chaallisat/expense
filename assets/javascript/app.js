@@ -20,8 +20,10 @@ $("#add-expense").on("click", function(event) {
 //Store all info gathered from UI
 const exCategory = $("#category").val().trim();
 const exName = $("#ex-name").val().trim();
-const exAmount = parseInt($("#amount").val().trim());
+let exAmount = parseInt($("#amount").val().trim());
 const exDate = moment($("#ex-date").val().trim(), "MM/DD/YYYY").format("X");
+
+exAmount = parseFloat(Math.round(exAmount * 100) / 100).toFixed(2);
 
 const newExpense = {
     category: exCategory,
