@@ -1,0 +1,20 @@
+{
+  "name": "expense",
+  "version": "1.0.0",
+  "description": "https://chaallisat.github.io/expense/",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chaallisat/expense.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chaallisat/expense/issues"
+  },
+  "homepage": "https://github.com/chaallisat/expense#readme"
+}
